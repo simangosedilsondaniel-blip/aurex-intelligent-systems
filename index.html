@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AUREX Intelligent Systems provides AI, business automation and digital transformation solutions.">
+<title>AUREX Intelligent Systems</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#101114;color:#fff;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 8%;border-bottom:1px solid #333}
+.logo{color:#d6b46b;font-size:24px;font-weight:bold;letter-spacing:3px}
+.logo span{display:block;font-size:10px;letter-spacing:2px;color:white}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
+button{cursor:pointer;background:#d6b46b;color:#101114;border:0;padding:10px 16px;font-weight:bold;border-radius:4px}
+.hero{padding:120px 8%;max-width:1000px}
+.tag{color:#d6b46b;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(40px,7vw,76px);line-height:1.12;margin:22px 0}
+h1 span,h2 span{color:#d6b46b}
+.hero p{color:#bbb;max-width:650px;margin-bottom:30px}
+section{padding:75px 8%}
+h2{font-size:36px;margin-bottom:20px}
+.muted{color:#aaa;max-width:700px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:35px}
+.service{background:#191a1f;border:1px solid #333;padding:28px;border-radius:8px}
+.service h3{color:#d6b46b;margin-bottom:12px}
+.service p{color:#aaa;font-size:14px}
+.contact{background:#191a1f}
+footer{padding:30px 8%;color:#999;border-top:1px solid #333;font-size:13px}
+@media(max-width:700px){header{flex-wrap:wrap;gap:15px}nav{display:flex;flex-wrap:wrap;gap:12px}nav a{margin:0}.hero{padding:85px 8%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">AUREX<span>INTELLIGENT SYSTEMS</span></div>
+<nav>
+<a href="#home" data-en="Home" data-pt="Início">Home</a>
+<a href="#about" data-en="About" data-pt="Sobre nós">About</a>
+<a href="#services" data-en="Services" data-pt="Serviços">Services</a>
+<a href="#contact" data-en="Contact" data-pt="Contacto">Contact</a>
+<button onclick="toggleLanguage()">PT / EN</button>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="tag" data-en="INTELLIGENCE. AUTOMATION. TRANSFORMATION." data-pt="INTELIGÊNCIA. AUTOMAÇÃO. TRANSFORMAÇÃO.">INTELLIGENCE. AUTOMATION. TRANSFORMATION.</div>
+<h1 data-en="Building a smarter <span>business future.</span>" data-pt="Construindo um futuro empresarial mais <span>inteligente.</span>">Building a smarter <span>business future.</span></h1>
+<p data-en="We help businesses transform their operations through Artificial Intelligence, automation and intelligent digital solutions." data-pt="Ajudamos empresas a transformar as suas operações através da Inteligência Artificial, automação e soluções digitais inteligentes.">We help businesses transform their operations through Artificial Intelligence, automation and intelligent digital solutions.</p>
+<a href="#contact"><button data-en="Work with us" data-pt="Trabalhe connosco">Work with us</button></a>
+</section>
+
+<section id="about">
+<h2 data-en="Who we <span>are</span>" data-pt="Quem <span>somos</span>">Who we <span>are</span></h2>
+<p class="muted" data-en="AUREX Intelligent Systems is a technology company focused on artificial intelligence, business automation and digital transformation. Our mission is to help organizations work smarter, serve customers better and grow through technology." data-pt="A AUREX Intelligent Systems é uma empresa tecnológica focada em inteligência artificial, automação empresarial e transformação digital. A nossa missão é ajudar organizações a trabalhar melhor, atender os clientes e crescer através da tecnologia.">AUREX Intelligent Systems is a technology company focused on artificial intelligence, business automation and digital transformation.</p>
+</section>
+
+<section id="services">
+<h2 data-en="Our <span>Services</span>" data-pt="Os nossos <span>serviços</span>">Our <span>Services</span></h2>
+<p class="muted" data-en="Intelligent solutions designed for modern businesses." data-pt="Soluções inteligentes concebidas para empresas modernas.">Intelligent solutions designed for modern businesses.</p>
+<div class="services">
+<div class="service"><h3>AI Solutions</h3><p data-en="AI assistants, intelligent chatbots and customer support automation." data-pt="Assistentes de IA, chatbots inteligentes e automação do atendimento ao cliente.">AI assistants, intelligent chatbots and customer support automation.</p></div>
+<div class="service"><h3>Business Automation</h3><p data-en="Automating repetitive workflows and business processes." data-pt="Automatização de tarefas repetitivas e processos empresariais.">Automating repetitive workflows and business processes.</p></div>
+<div class="service"><h3>Digital Solutions</h3><p data-en="Modern websites and digital platforms for businesses." data-pt="Websites modernos e plataformas digitais para empresas.">Modern websites and digital platforms for businesses.</p></div>
+<div class="service"><h3>Data Intelligence</h3><p data-en="Business insights, analytics and intelligent reporting." data-pt="Análise empresarial, dados e relatórios inteligentes.">Business insights, analytics and intelligent reporting.</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 data-en="Let's build the <span>future.</span>" data-pt="Vamos construir o <span>futuro.</span>">Let's build the <span>future.</span></h2>
+<p class="muted" data-en="Interested in transforming your business? Contact our team to discuss your project." data-pt="Interessado em transformar o seu negócio? Entre em contacto connosco para discutir o seu projeto.">Interested in transforming your business? Contact our team to discuss your project.</p>
+<p style="margin-top:25px;color:#d6b46b">Email: contact@aurexintelligent.com</p>
+</section>
+</main>
+
+<footer>© 2026 AUREX Intelligent Systems. All rights reserved.</footer>
+
+<script>
+let language="en";
+function toggleLanguage(){
+ language=language==="en"?"pt":"en";
+ document.documentElement.lang=language;
+ document.querySelectorAll("[data-en]").forEach(el=>{
+ el.innerHTML=el.getAttribute("data-"+language);
+ });
+}
+</script>
+</body>
+</html>

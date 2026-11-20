@@ -489,7 +489,52 @@ footer p {
   </div>
 </section>
 
-<section class="contact" id="contact">
+
+<section id="ai-assistant" style="background:#090909;padding:80px 20px;text-align:center;">
+  <div class="container">
+
+    <div class="eyebrow" style="color:#d6ad55;">
+      AUREX AI TECHNOLOGY
+    </div>
+
+    <h2 style="color:#ffffff;font-size:36px;margin:20px 0;">
+      Meet AUREX AI Assistant
+    </h2>
+
+    <p style="color:#bbbbbb;max-width:650px;margin:0 auto 35px;">
+      Your intelligent business assistant. Available in Portuguese and English, helping businesses serve customers around the clock.
+    </p>
+
+    <div style="max-width:500px;margin:auto;background:#151515;border:1px solid #b89550;border-radius:15px;padding:25px;">
+
+      <div style="color:#d6ad55;font-size:20px;font-weight:bold;margin-bottom:15px;">
+        AUREX AI Assistant
+      </div>
+
+      
+<div id="aiChatMessages" style="background:#222;padding:15px;border-radius:10px;color:white;text-align:left;margin-bottom:20px;">
+  Hello! Welcome to AUREX Intelligent Systems. How can I help you today?
+</div>
+  
+      <input
+  type="text"
+  id="aiUserInput"
+  placeholder="Type your message..."
+  style="width:100%;padding:14px;border-radius:8px;border:1px solid #555;background:#101010;color:white;box-sizing:border-box;">
+
+      <button type="button" onclick="sendDemoMessage()" style="margin-top:15px;width:100%;padding:14px;background:#d6ad55;color:#111;border:0;border-radius:8px;font-weight:bold;cursor:pointer;">
+  SEND MESSAGE
+</button>
+
+      <p style="color:#888;font-size:12px;margin-top:15px;">
+        AUREX Intelligent Systems
+      </p>
+
+    </div>
+  </div>
+</section>
+
+  <section class="contact" id="contact">
   <div class="container">
     <div class="eyebrow" data-pt="VAMOS CONVERSAR" data-en="LET'S TALK">VAMOS CONVERSAR</div>
 
@@ -593,6 +638,41 @@ Mensagem: ${message}`;
   window.open(url, "_blank");
 }
 
+function sendDemoMessage() {
+  const input = document.getElementById("aiUserInput");
+  const message = input.value.trim();
+
+  if (!message) return;
+
+  const chat = document.getElementById("aiChatMessages");
+
+  const userMessage = document.createElement("div");
+  userMessage.textContent = message;
+  userMessage.style.cssText = "background:#333;color:white;padding:12px;border-radius:10px;margin:10px 0;text-align:right;";
+  chat.appendChild(userMessage);
+
+  const question = message.toLowerCase();
+  let answer;
+
+  if (question.includes("hello") || question.includes("hi") || question.includes("olá") || question.includes("ola")) {
+    answer = "Hello! / Olá! Welcome to AUREX Intelligent Systems. How can we help your business?";
+  } else if (question.includes("price") || question.includes("preço") || question.includes("cost")) {
+    answer = "Our prices depend on your business needs. Contact our team on WhatsApp for a proposal.";
+  } else if (question.includes("service") || question.includes("serviço")) {
+    answer = "AUREX offers AI Solutions, Automation, Digital Solutions, Data Intelligence and Systems Integration.";
+  } else if (question.includes("contact") || question.includes("whatsapp")) {
+    answer = "Contact our team on WhatsApp: +258 820 209 107.";
+  } else {
+    answer = "Thank you for contacting AUREX! Please tell us more about your business needs.";
+  }
+
+  const reply = document.createElement("div");
+  reply.textContent = answer;
+  reply.style.cssText = "background:#292929;color:#d6ad55;padding:12px;border-radius:10px;margin:10px 0;text-align:left;";
+  chat.appendChild(reply);
+
+  input.value = "";
+}
 </script>
 
 

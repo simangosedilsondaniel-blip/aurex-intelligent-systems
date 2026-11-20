@@ -571,6 +571,28 @@ function toggleLanguage() {
   document.getElementById("languageButton").textContent =
     currentLanguage === "pt" ? "PT / EN" : "EN / PT";
 }
+
+function sendToWhatsApp(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("clientName").value;
+  const email = document.getElementById("clientEmail").value;
+  const company = document.getElementById("clientCompany").value;
+  const service = document.getElementById("clientService").value;
+  const message = document.getElementById("clientMessage").value;
+
+  const text = `Novo contacto - AUREX Intelligent Systems
+Nome: ${name}
+Email: ${email}
+Empresa: ${company}
+Serviço: ${service}
+Mensagem: ${message}`;
+
+  const url = "https://wa.me/258820209107?text=" + encodeURIComponent(text);
+
+  window.open(url, "_blank");
+}
+
 </script>
 
 

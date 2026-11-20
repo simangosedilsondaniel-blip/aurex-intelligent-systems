@@ -510,7 +510,38 @@ footer p {
     <a class="contact-email" href="mailto:contact@aurexintelligent.com">
       contact@aurexintelligent.com
     </a>
-  </div>
+  
+<form id="aurexContactForm" onsubmit="sendToWhatsApp(event)" style="max-width:600px;margin:35px auto 0;text-align:left;">
+
+  <label>Nome completo</label>
+  <input type="text" id="clientName" placeholder="O seu nome" required>
+
+  <label>E-mail</label>
+  <input type="email" id="clientEmail" placeholder="O seu e-mail" required>
+
+  <label>Empresa</label>
+  <input type="text" id="clientCompany" placeholder="Nome da empresa">
+
+  <label>Serviço pretendido</label>
+  <select id="clientService" required>
+    <option value="">Seleccione um serviço</option>
+    <option>AUREX AI Solutions</option>
+    <option>AUREX Automation</option>
+    <option>AUREX Digital</option>
+    <option>AUREX Data Intelligence</option>
+    <option>AUREX Systems</option>
+    <option>Outro</option>
+  </select>
+
+  <label>Mensagem</label>
+  <textarea id="clientMessage" rows="5" placeholder="Descreva o que pretende..." required></textarea>
+
+  <button type="submit" class="btn" style="width:100%;cursor:pointer;">
+    ENVIAR MENSAGEM
+  </button>
+
+</form>
+</div>
 </section>
 </main>
 

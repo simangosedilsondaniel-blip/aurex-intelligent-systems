@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AUREX AI Solutions - Artificial Intelligence and intelligent business automation.">
+  <title>AUREX AI Solutions | AUREX Intelligent Systems</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #080808;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid #292929;
+    }
+
+    .brand {
+      color: #d6ad55;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      padding: 110px 0;
+      text-align: center;
+      background: linear-gradient(135deg, #111, #080808);
+    }
+
+    .eyebrow {
+      color: #d6ad55;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.15;
+      margin: 25px 0;
+    }
+
+    h1 span, h2 span { color: #d6ad55; }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #bbb;
+      font-size: 17px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: #d6ad55;
+      color: #080808;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    section.content { padding: 75px 0; }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      margin: 12px 0;
+    }
+
+    .section-title p { color: #aaa; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #141414;
+      border: 1px solid #333;
+      padding: 28px;
+      border-radius: 10px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      border-color: #d6ad55;
+      transform: translateY(-5px);
+    }
+
+    .card .number {
+      color: #d6ad55;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .card p { color: #aaa; font-size: 14px; }
+
+    .cta {
+      background: #111;
+      border-top: 1px solid #333;
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .cta h2 { font-size: 32px; margin-bottom: 15px; }
+
+    .cta p { color: #aaa; }
+
+    footer {
+      padding: 25px 0;
+      text-align: center;
+      color: #777;
+      border-top: 1px solid #292929;
+      font-size: 13px;
+    }
+
+    .language {
+      background: transparent;
+      border: 1px solid #d6ad55;
+      color: #d6ad55;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    @media(max-width:600px) {
+      .header-content { justify-content: center; }
+      nav a { margin: 0 7px; }
+      .hero { padding: 75px 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-content">
+    <div class="brand">AUREX</div>
+    <nav>
+      <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+      <a href="#services" data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="#contact" data-pt="Contacto" data-en="Contact">Contacto</a>
+      <button class="language" onclick="toggleLanguage()">EN</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">AUREX AI SOLUTIONS</div>
+
+    <h1 data-pt="Inteligência artificial para um futuro empresarial mais <span>inteligente.</span>"
+        data-en="Artificial intelligence for a smarter <span>business future.</span>">
+      Inteligência artificial para um futuro empresarial mais <span>inteligente.</span>
+    </h1>
+
+    <p data-pt="Desenvolvemos soluções inteligentes que ajudam empresas a automatizar processos, melhorar o atendimento e transformar a experiência dos seus clientes."
+       data-en="We develop intelligent solutions that help businesses automate processes, improve customer service and transform customer experiences.">
+      Desenvolvemos soluções inteligentes que ajudam empresas a automatizar processos, melhorar o atendimento e transformar a experiência dos seus clientes.
+    </p>
+
+    <a href="#contact" class="btn" data-pt="SOLICITAR INFORMAÇÕES" data-en="REQUEST INFORMATION">
+      SOLICITAR INFORMAÇÕES
+    </a>
+  </div>
+</section>
+
+<section class="content" id="services">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow" data-pt="AS NOSSAS CAPACIDADES" data-en="OUR CAPABILITIES">AS NOSSAS CAPACIDADES</div>
+      <h2 data-pt="Soluções de <span>Inteligência Artificial</span>" data-en="<span>Artificial Intelligence</span> Solutions">
+        Soluções de <span>Inteligência Artificial</span>
+      </h2>
+      <p data-pt="Tecnologia inteligente adaptada às necessidades de cada negócio."
+         data-en="Intelligent technology adapted to the needs of each business.">
+        Tecnologia inteligente adaptada às necessidades de cada negócio.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="number">01 / AI ASSISTANTS</div>
+        <h3 data-pt="Assistentes Inteligentes" data-en="Intelligent Assistants">Assistentes Inteligentes</h3>
+        <p data-pt="Assistentes virtuais para responder a perguntas e apoiar clientes e equipas."
+           data-en="Virtual assistants that answer questions and support customers and teams.">
+          Assistentes virtuais para responder a perguntas e apoiar clientes e equipas.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="number">02 / CHATBOTS</div>
+        <h3 data-pt="Chatbots Empresariais" data-en="Business Chatbots">Chatbots Empresariais</h3>
+        <p data-pt="Chatbots para websites e canais digitais que facilitam a comunicação com clientes."
+           data-en="Chatbots for websites and digital channels that make customer communication easier.">
+          Chatbots para websites e canais digitais que facilitam a comunicação com clientes.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="number">03 / AUTOMATION</div>
+        <h3 data-pt="Atendimento Automatizado" data-en="Automated Customer Support">Atendimento Automatizado</h3>
+        <p data-pt="Soluções para responder a solicitações e encaminhar clientes para as equipas certas."
+           data-en="Solutions to respond to enquiries and direct customers to the right teams.">
+          Soluções para responder a solicitações e encaminhar clientes para as equipas certas.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="number">04 / INTEGRATION</div>
+        <h3 data-pt="Integração de IA" data-en="AI Integration">Integração de IA</h3>
+        <p data-pt="Integração de ferramentas de inteligência artificial nos processos empresariais."
+           data-en="Integration of artificial intelligence tools into business processes.">
+          Integração de ferramentas de inteligência artificial nos processos empresariais.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="eyebrow">AUREX INTELLIGENT SYSTEMS</div>
+    <h2 data-pt="Vamos construir algo inteligente?" data-en="Let's build something intelligent?">
+      Vamos construir algo inteligente?
+    </h2>
+    <p data-pt="Entre em contacto com a nossa equipa para conhecer as nossas soluções."
+       data-en="Contact our team to learn more about our solutions.">
+      Entre em contacto com a nossa equipa para conhecer as nossas soluções.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/258820209107?text=Ol%C3%A1%2C%20AUREX.%20Gostaria%20de%20saber%20mais%20sobre%20AUREX%20AI%20Solutions."
+       target="_blank" rel="noopener noreferrer"
+       data-pt="CONTACTAR A AUREX" data-en="CONTACT AUREX">
+      CONTACTAR A AUREX
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 AUREX Intelligent Systems. All rights reserved.
+</footer>
+
+<script>
+  let currentLanguage = "pt";
+
+  function toggleLanguage() {
+    currentLanguage = currentLanguage === "pt" ? "en" : "pt";
+
+    document.querySelectorAll("[data-pt][data-en]").forEach(element => {
+      element.innerHTML = element.getAttribute("data-" + currentLanguage);
+    });
+
+    document.documentElement.lang = currentLanguage;
+    document.querySelector(".language").textContent =
+      currentLanguage === "pt" ? "EN" : "PT";
+  }
+</script>
+
+</body>
+</html>
